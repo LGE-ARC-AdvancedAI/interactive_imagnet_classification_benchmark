@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="a9fe3a2d-34ab-4957-9672-4f04d5d49e3f" data-root-id="1002"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1124">
+          {"3d7d7f8f-f15d-4fc1-9d58-11b4fd08200e":{"roots":{"references":[{"attributes":{"overlay":{"id":"1047","type":"BoxAnnotation"}},"id":"1025","type":"BoxZoomTool"},{"attributes":{"callback":null},"id":"1007","type":"DataRange1d"},{"attributes":{},"id":"1026","type":"SaveTool"},{"attributes":{},"id":"1027","type":"ResetTool"},{"attributes":{},"id":"1028","type":"HelpTool"},{"attributes":{"below":[{"id":"1013","type":"LogAxis"}],"center":[{"id":"1017","type":"Grid"},{"id":"1022","type":"Grid"},{"id":"1048","type":"Legend"}],"left":[{"id":"1018","type":"LinearAxis"}],"plot_height":300,"plot_width":700,"renderers":[{"id":"1040","type":"GlyphRenderer"}],"title":{"id":"1003","type":"Title"},"toolbar":{"id":"1029","type":"Toolbar"},"x_range":{"id":"1005","type":"DataRange1d"},"x_scale":{"id":"1009","type":"LogScale"},"y_range":{"id":"1007","type":"DataRange1d"},"y_scale":{"id":"1011","type":"LinearScale"}},"id":"1002","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1023","type":"PanTool"},{"id":"1024","type":"WheelZoomTool"},{"id":"1025","type":"BoxZoomTool"},{"id":"1026","type":"SaveTool"},{"id":"1027","type":"ResetTool"},{"id":"1028","type":"HelpTool"},{"id":"1050","type":"HoverTool"}]},"id":"1029","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"field":"rad","units":"screen"},"x":{"field":"nparam"},"y":{"field":"Top1"}},"id":"1039","type":"Circle"},{"attributes":{"factors":["12","14","15","16","17","18","19"],"palette":["#3288bd","#99d594","#e6f598","#ffffbf","#fee08b","#fc8d59","#d53e4f"]},"id":"1036","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"1001","type":"ColumnDataSource"},"glyph":{"id":"1038","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1039","type":"Circle"},"selection_glyph":null,"view":{"id":"1041","type":"CDSView"}},"id":"1040","type":"GlyphRenderer"},{"attributes":{"text":" Benchmark of Image Classificaion on ImageNet"},"id":"1003","type":"Title"},{"attributes":{"source":{"id":"1001","type":"ColumnDataSource"}},"id":"1041","type":"CDSView"},{"attributes":{"axis_label":"Model Size [Number of Parameters]","formatter":{"id":"1045","type":"LogTickFormatter"},"ticker":{"id":"1014","type":"LogTicker"}},"id":"1013","type":"LogAxis"},{"attributes":{},"id":"1043","type":"BasicTickFormatter"},{"attributes":{"num_minor_ticks":10},"id":"1014","type":"LogTicker"},{"attributes":{"ticker":{"id":"1014","type":"LogTicker"}},"id":"1017","type":"Grid"},{"attributes":{"label":{"field":"year"},"renderers":[{"id":"1040","type":"GlyphRenderer"}]},"id":"1049","type":"LegendItem"},{"attributes":{"axis_label":"Top 1 Accuracy [%]","formatter":{"id":"1043","type":"BasicTickFormatter"},"ticker":{"id":"1019","type":"BasicTicker"}},"id":"1018","type":"LinearAxis"},{"attributes":{"callback":null,"tooltips":[["model","@model"],["Top5","@Top5"]]},"id":"1050","type":"HoverTool"},{"attributes":{},"id":"1019","type":"BasicTicker"},{"attributes":{"dimension":1,"ticker":{"id":"1019","type":"BasicTicker"}},"id":"1022","type":"Grid"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1047","type":"BoxAnnotation"},{"attributes":{"ticker":null},"id":"1045","type":"LogTickFormatter"},{"attributes":{"callback":null,"data":{"Top1":{"__ndarray__":"ZmZmZmamT0AzMzMzM3NRQJqZmZmZmVJAAAAAAACgUkAzMzMzM7NTQDMzMzMzs1JAAAAAAACQU0BmZmZmZoZTQAAAAAAAwFNAZmZmZmYGVECamZmZmTlUQMP1KFyPolNAMzMzMzNTVEC4HoXrUVhUQBSuR+F6BFRAmpmZmZm5VEDNzMzMzKxUQM3MzMzMrFRAzczMzMxcVEAK16NwPUpTQJqZmZmZWVVAzczMzMwsU0CamZmZmRlVQM3MzMzMDFVAZmZmZmbmUkDNzMzMzMxSQJqZmZmZuVJAmpmZmZn5VEBmZmZmZkZVQM3MzMzMjFRAMzMzMzMTU0AzMzMzMxNTQDMzMzMz81JAZmZmZmbmUkDNzMzMzMxSQJqZmZmZOVNAAAAAAABAU0CkcD0K1yNSQB+F61G4XlNAmpmZmZn5UkCamZmZmdlVQDMzMzMzs1NAmpmZmZmZVUAAAAAAAEBVQJqZmZmZGVVAAAAAAAAAVUDNzMzMzOxUQGZmZmZm5lRAMzMzMzPTVEAAAAAAAMBUQJqZmZmZuVRAZmZmZmamVEAAAAAAAKBUQDMzMzMzk1RAZmZmZmZGVEAzMzMzM/NTQGZmZmZmxlNAexSuR+G6U0CamZmZmblTQJqZmZmZqVNAMzMzMzPzU0A=","dtype":"float64","shape":[61]},"Top5":{"__ndarray__":"ZmZmZmYmVUCamZmZmXlWQJqZmZmZ+VZAAAAAAAAAV0CamZmZmZlXQM3MzMzMDFdAzczMzMx8V0CuR+F6FH5XQAAAAAAAoFdAZmZmZmbGV0BmZmZmZuZXQD0K16NwnVdAMzMzMzPzV0DhehSuR/FXQLgehetRuFdAzczMzMwMWEDNzMzMzAxYQM3MzMzMDFhA9ihcj8L1V0DhehSuR2FXQGZmZmZmZlhAMzMzMzNTV0AAAAAAAEBYQM3MzMzMTFhAzczMzMwsV0AAAAAAACBXQAAAAAAAAPh/ZmZmZmYmWEAAAAAAAGBYQJqZmZmZGVhAAAAAAABAV0DNzMzMzExXQDMzMzMzM1dAZmZmZmYmV0AAAAAAAAD4f5qZmZmZWVdAMzMzMzNTV0CkcD0K17NWQOxRuB6Fa1dAMzMzMzMzV0DNzMzMzIxYQJqZmZmZmVdAAAAAAACAWEDNzMzMzExYQGZmZmZmRlhAmpmZmZk5WEAzMzMzMzNYQM3MzMzMLFhAzczMzMwsWEAAAAAAACBYQDMzMzMzE1hAMzMzMzMTWEBmZmZmZiZYQAAAAAAAAFhAAAAAAADgV0CamZmZmblXQGZmZmZmpldAMzMzMzOjV0DNzMzMzIxXQPYoXI/ClVdAmpmZmZm5V0A=","dtype":"float64","shape":[61]},"index":[114,110,102,101,57,99,67,69,53,35,33,62,27,26,37,18,19,20,25,73,2,77,7,9,89,92,98,11,3,24,81,80,85,90,93,76,75,104,72,82,0,58,1,4,6,10,12,13,15,16,17,21,22,23,30,43,52,55,56,60,44],"model":["AlexNet - 7CNNs","Inception V1","VGG-16","VGG-19","Inception V3","Inception V2","ResNet-101","WRN-50-2-bottleneck","Xception","Inception ResNet V2","ResNeXt-101  64x4","DenseNet-201","PolyNet","DPN-131 (320x320)","DPN-131 (224x224)","PNASNet-5","NASNET-A(6)","SENet-154","DPN-131 (320x320, Mean-Max Pooling)","ResNet-50-D","ResNeXt-101 32x48d","MnasNet-A3","GPIPE"," ResNeXt-101 32\u00d716d","MnasNet-A2","MnasNet-A1","FBNet-C","AmoebaNet-A","ResNeXt-101 32x32d","ResNeXt-101 32x8d","SCARLET-B","EfficientNet-B0","MixNet-S","SCARLET-C","MobileNet V3-Large 1.0","SCARLET-A","MixNet-M","ECA-Net (MobileNetV2)","ECA-Net (ResNet-50)","MoGA-A","Noisy Student (EfficientNet-L2)","EfficientNet-B1","FixResNeXt-101 32x48d","EfficientNet-B7 (RandAugment)","EfficientNet-B7","EfficientNet-B6","FixPNASNet-5","MultiGrain PNASNet (500px)","EfficientNet-B5","MultiGrain SENet154 (400px)","Oct-ResNet-152 (SE)","EfficientNet-B4","FixResNet-50 Billion","SCARLET-A4","EfficientNet-B3","FixResNet-50 CutMix","FixResNet-50","ECA-Net (ResNet-152)","MixNet-L","ECA-Net (ResNet-101)","EfficientNet-B2"],"nparam":{"__ndarray__":"AAAAADicjEEAAAAA0BJTQQAAAABtc6BBAAAAAIgqoUEAAAAAjLJ2QQAAAADAXGVBAAAAANASg0EAAACAUm2QQQAAAABovnVBAAAAAIabikEAAAAAiu6TQQAAAADQEnNBAAAAADzvlUEAAAAA0BKTQQAAAADQEpNBAAAAgCCHlEEAAACABjKVQQAAAACRZ6FBAAAAANASk0EAAAAAhNd3QQAAAKDEtMhBAAAAACDWU0EAAACgkpnAQQAAAABpIKdBAAAAAIBPUkEAAAAAMMFNQQAAAAAY+1RBAAAAQF/0u0EAAACAmMa7QQAAAAAY+5RBAAAAAKjLWEEAAAAAyDdUQf/////PR09BAAAAAGDjVkEAAAAAcJlUQQAAAAD4jllBAAAAANASU0EAAAAAcHtJQQAAAAC1PXdBAAAAAHh0U0EAAAAAOJy8QQAAAAAwwV1BAAAAoMS0yEEAAAAApHiPQQAAAACkeI9BAAAAAAaBhEEAAACAIIeUQQAAAAAGgZRBAAAAADicfEEAAAAABoGUQQAAAAC28o9BAAAAAKweckEAAAAAAGp4QQAAAAAcg3pBAAAAAGDjZkEAAAAAAGp4QQAAAAAAanhBAAAAANZei0EAAAAA6NhbQQAAAIDEQoRBAAAAADCMYUE=","dtype":"float64","shape":[61]},"rad":{"__ndarray__":"JHv7BOc8N0D87mNpM9UaQLJiCob6nkFAAAAAAAAAQkBck2fWaUUtQDoGnG9wFCRAfsQjLEL5MkA+1JHV3OY4QBVccapMpixAP1KF6uloNkA1oV2gDm47QPzuY2kz1SpAIYYysGXGPED87mNpM9U6QPzuY2kz1TpAlxsFUUfWO0CFCmfZOUk8QNH6WsDjH0JA/O5jaTPVOkAAAAAAAAAuQMfzYRUimFVAtBY84TxdG0CDSH7aXLNRQE2+/EeA5ERAq8Z0L2pKGkD2TnPCtrIXQPqB/oV6JBxA3aHuwQc+UEB8VWfatTBQQPqB/oV6JDxA8UebDhiYHkAigHZtRqAbQCqSsm5TTBhAxbENHtVkHUCRYMfSruIbQJh+ecKsDx9A/O5jaTPVGkCKf//sSO4VQISAm1Odni1AFoMpgo0ZG0Ar/Khdgm5QQAfHyYXQwSBAx/NhFSKYVUASFFLxQl84QBIUUvFCXzhACDmW3xysM0CXGwVRR9Y7QE40zZUj0jtAK/yoXYJuMEBONM2VI9I7QNA+eNZZjjhA9nSWzkQnKkCWbWwTnVsuQNNPABiroi9AgDlCLtzIJECWbWwTnVsuQJZtbBOdWy5Af/IyBJW6NkAVvdMgCzYgQOIJ0YsojjNARWwkLusyIkA=","dtype":"float64","shape":[61]},"shortname":["AlexNet","Inception","VGG","VGG","Inception","Inception","ResNet","WRN","Xception","Inception","ResNeXt","DenseNet","PolyNet","DPN","DPN","PNASNet","NASNET","SENet","DPN","ResNet","ResNeXt","MnasNet","GPIPE","","MnasNet","MnasNet","FBNet","AmoebaNet","ResNeXt","ResNeXt","SCARLET","EfficientNet","MixNet","SCARLET","MobileNet","SCARLET","MixNet","ECA","ECA","MoGA","Noisy","EfficientNet","FixResNeXt","EfficientNet","EfficientNet","EfficientNet","FixPNASNet","MultiGrain","EfficientNet","MultiGrain","Oct","EfficientNet","FixResNet","SCARLET","EfficientNet","FixResNet","FixResNet","ECA","MixNet","ECA","EfficientNet"],"size":["60M","5M","138M","144M","23.8M","11.2M","40M","68.9M","22.8M","55.8M","83.6M","20M","92M","80M","80M","86.1M","88.9M","146M","80M","25M","829M","5.2M","557M","194M","4.8M","3.9M","5.5M","469M","466M","88M","6.5M","5.3M","4.1M","6.0M","5.4M","6.7M","5.0M","3.34M","24.37M","5.1M","480M","7.8M","829M","66M","66M","43M","86.1M","86M","30M","86M","67M","19M","25.6M","27.8M","12M","25.6M","25.6M","57.40M","7.3M","42.49M","9.2M"],"year":["12","14","14","14","15","15","15","16","16","16","16","16","16","17","17","17","17","17","17","18","18","18","18","18","18","18","18","18","18","18","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19","19"]},"selected":{"id":"1059","type":"Selection"},"selection_policy":{"id":"1058","type":"UnionRenderers"}},"id":"1001","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"year","transform":{"id":"1036","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"year","transform":{"id":"1036","type":"CategoricalColorMapper"}},"size":{"field":"rad","units":"screen"},"x":{"field":"nparam"},"y":{"field":"Top1"}},"id":"1038","type":"Circle"},{"attributes":{"callback":null},"id":"1005","type":"DataRange1d"},{"attributes":{"items":[{"id":"1049","type":"LegendItem"}],"location":"bottom_left","orientation":"horizontal","title":"Year"},"id":"1048","type":"Legend"},{"attributes":{},"id":"1023","type":"PanTool"},{"attributes":{},"id":"1009","type":"LogScale"},{"attributes":{},"id":"1058","type":"UnionRenderers"},{"attributes":{},"id":"1059","type":"Selection"},{"attributes":{},"id":"1024","type":"WheelZoomTool"},{"attributes":{},"id":"1011","type":"LinearScale"}],"root_ids":["1002"]},"title":"Bokeh Application","version":"1.3.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1124').textContent;
+                  var render_items = [{"docid":"3d7d7f8f-f15d-4fc1-9d58-11b4fd08200e","roots":{"1002":"a9fe3a2d-34ab-4957-9672-4f04d5d49e3f"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
